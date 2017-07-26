@@ -1,37 +1,34 @@
 <html>
+
 <head>
+    <style>
+    #wednesday {
+        display: none;
+        width: auto;
+        height: 100%;
+        margin: auto;
+    }
 
-<style>
-	#wednesday {
-		display: none;
-		width: auto;
-		height: 100%;
-		margin: auto;
-	}
-
-	p {
-		font-size: 10em;
-		text-align: center;
-		padding-top: 1em;
-	}
-</style>
-
+    p {
+        font-size: 10em;
+        text-align: center;
+        padding-top: 1em;
+    }
+    </style>
+    <!-- Made by Christiaan Hendriksen @chendriksen -->
 </head>
 
 <body>
-<div>
-<p id="no">NO</p>
-<img id="wednesday" src="wednesday.jpg" alt="It is Wednesday, my dudes">
-</div>
-
-
+    <div>
+        <p id="no">NO</p>
+        <img id="wednesday" src="wednesday.jpg" alt="It is Wednesday, my dudes">
+    </div>
 </body>
-
 <script>
 var d = new Date();
 if (d.getDay() === 3) {
-	document.getElementById('no').style.display = 'none';
-	document.getElementById('wednesday').style.display = 'block'
+    document.getElementById('no').style.display = 'none';
+    document.getElementById('wednesday').style.display = 'block'
 };
 </script>
 
